@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "InvoiceManager (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "InvoiceManager (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
