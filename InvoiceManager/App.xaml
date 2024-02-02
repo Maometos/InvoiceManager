@@ -11,6 +11,8 @@
                 <!-- Other merged dictionaries here -->
             </ResourceDictionary.MergedDictionaries>
             <!-- Other app resources here -->
+            <SolidColorBrush x:Key="TabViewItemHeaderBackground" Color="#FFEEF5FD"/>
+            <SolidColorBrush x:Key="TabViewItemHeaderBackgroundPointerOver" Color="White"/>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

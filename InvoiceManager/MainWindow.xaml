@@ -6,9 +6,114 @@
     xmlns:local="using:InvoiceManager"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    Title="Invoice Manager">
 
-    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Button x:Name="myButton" Click="myButton_Click">Click Me</Button>
-    </StackPanel>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Top" Background="#FFEEF5FD" BorderThickness="0,0.5,0,0.5">
+            <MenuBar Margin="6,0,0,0">
+                <MenuBar.Resources>
+                    <Style TargetType="MenuBarItem">
+                        <Setter Property="Margin" Value="0"></Setter>
+                    </Style>
+                </MenuBar.Resources>
+                <MenuBarItem Title="File">
+                    <MenuFlyoutItem Text="New">
+                        <MenuFlyoutItem.Icon>
+                            <FontIcon Glyph="&#xE7C3;"/>
+                        </MenuFlyoutItem.Icon>
+                        <MenuFlyoutItem.KeyboardAccelerators>
+                            <KeyboardAccelerator Modifiers="Control" Key="N"/>
+                        </MenuFlyoutItem.KeyboardAccelerators>
+                    </MenuFlyoutItem>
+                    <MenuFlyoutItem Text="Open...">
+                        <MenuFlyoutItem.Icon>
+                            <FontIcon Glyph="&#xED25;"/>
+                        </MenuFlyoutItem.Icon>
+                        <MenuFlyoutItem.KeyboardAccelerators>
+                            <KeyboardAccelerator Modifiers="Control" Key="O"/>
+                        </MenuFlyoutItem.KeyboardAccelerators>
+                    </MenuFlyoutItem>
+                    <MenuFlyoutItem Text="Close"/>
+                    <MenuFlyoutSeparator/>
+                    <MenuFlyoutItem Text="Settings" Icon="Setting"/>
+                    <MenuFlyoutSeparator/>
+                    <MenuFlyoutItem Text="Exit">
+                        <MenuFlyoutItem.KeyboardAccelerators>
+                            <KeyboardAccelerator Modifiers="Menu" Key="F4"/>
+                        </MenuFlyoutItem.KeyboardAccelerators>
+                    </MenuFlyoutItem>
+                </MenuBarItem>
+                <MenuBarItem Title="Edit">
+                    <MenuFlyoutItem Text="Undo" Icon="Undo"/>
+                    <MenuFlyoutSeparator/>
+                    <MenuFlyoutItem Text="Cut" Icon="Cut">
+                        <MenuFlyoutItem.KeyboardAccelerators>
+                            <KeyboardAccelerator Modifiers="Control" Key="X"/>
+                        </MenuFlyoutItem.KeyboardAccelerators>
+                    </MenuFlyoutItem>
+                    <MenuFlyoutItem Text="Copy" Icon="Copy">
+                        <MenuFlyoutItem.KeyboardAccelerators>
+                            <KeyboardAccelerator Modifiers="Control" Key="C"/>
+                        </MenuFlyoutItem.KeyboardAccelerators>
+                    </MenuFlyoutItem>
+                    <MenuFlyoutItem Text="Paste" Icon="Paste">
+                        <MenuFlyoutItem.KeyboardAccelerators>
+                            <KeyboardAccelerator Modifiers="Control" Key="V"/>
+                        </MenuFlyoutItem.KeyboardAccelerators>
+                    </MenuFlyoutItem>
+                </MenuBarItem>
+                <MenuBarItem Title="Items">
+                    <MenuFlyoutItem Text="Products">
+                        <MenuFlyoutItem.Icon>
+                            <FontIcon Glyph="&#xE7B8;"/>
+                        </MenuFlyoutItem.Icon>
+                    </MenuFlyoutItem>
+                    <MenuFlyoutItem Text="Services" Icon="Repair"/>
+                </MenuBarItem>
+                <MenuBarItem Title="Sales">
+                    <MenuFlyoutItem Text="Customers" Icon="Contact"/>
+                    <MenuFlyoutItem Text="Invoices">
+                        <MenuFlyoutItem.Icon>
+                            <FontIcon Glyph="&#xEC5B;"/>
+                        </MenuFlyoutItem.Icon>
+                    </MenuFlyoutItem>
+                </MenuBarItem>
+                <MenuBarItem Title="Help">
+                    <MenuFlyoutItem Text="About"/>
+                </MenuBarItem>
+            </MenuBar>
+            <CommandBar DefaultLabelPosition="Right" HorizontalAlignment="Left">
+                <AppBarButton Label="Products">
+                    <AppBarButton.Icon>
+                        <FontIcon Glyph="&#xE7B8;"/>
+                    </AppBarButton.Icon>
+                </AppBarButton>
+                <AppBarButton Label="Services" Icon="Repair"/>
+                <AppBarSeparator/>
+                <AppBarButton Label="Customers" Icon="Contact"/>
+                <AppBarButton Label="Invoices">
+                    <AppBarButton.Icon>
+                        <FontIcon Glyph="&#xEC5B;"/>
+                    </AppBarButton.Icon>
+                </AppBarButton>
+                <AppBarSeparator/>
+                <AppBarButton Label="Settings" Icon="Setting"/>
+            </CommandBar>
+        </StackPanel>
+        <TabView Grid.Row="1" VerticalAlignment="Stretch" IsAddTabButtonVisible="False" Background="LightSteelBlue" >
+            <TabView.TabItems>
+                <TabViewItem Header="Dashboard" IsClosable="False">
+                    <TabViewItem.IconSource>
+                        <SymbolIconSource Symbol="Home"/>
+                    </TabViewItem.IconSource>
+                    <Frame x:Name="ContentFrame"/>
+                </TabViewItem>
+            </TabView.TabItems>
+        </TabView>
+    </Grid>
 </Window>
