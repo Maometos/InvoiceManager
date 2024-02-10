@@ -5,7 +5,9 @@ VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceManager", "InvoiceManager\InvoiceManager.csproj", "{95426E40-0696-4CE1-941B-3439DBA95B3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceCore", "InvoiceCore\InvoiceCore.csproj", "{D406E4A5-E526-476F-8A36-061C243262C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceCore", "InvoiceCore\InvoiceCore.csproj", "{D406E4A5-E526-476F-8A36-061C243262C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invoice.Tests", "Invoice.Tests\Invoice.Tests.csproj", "{BA752226-DC1C-4E6D-979D-C18A3089B67E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +61,22 @@ Global
 		{D406E4A5-E526-476F-8A36-061C243262C6}.Release|x64.Build.0 = Release|Any CPU
 		{D406E4A5-E526-476F-8A36-061C243262C6}.Release|x86.ActiveCfg = Release|Any CPU
 		{D406E4A5-E526-476F-8A36-061C243262C6}.Release|x86.Build.0 = Release|Any CPU
+		{BA752226-DC1C-4E6D-979D-C18A3089B67E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA752226-DC1C-4E6D-979D-C18A3089B67E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA752226-DC1C-4E6D-979D-C18A3089B67E}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{BA752226-DC1C-4E6D-979D-C18A3089B67E}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{BA752226-DC1C-4E6D-979D-C18A3089B67E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BA752226-DC1C-4E6D-979D-C18A3089B67E}.Debug|x64.Build.0 = Debug|Any CPU
+		{BA752226-DC1C-4E6D-979D-C18A3089B67E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BA752226-DC1C-4E6D-979D-C18A3089B67E}.Debug|x86.Build.0 = Debug|Any CPU
+		{BA752226-DC1C-4E6D-979D-C18A3089B67E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA752226-DC1C-4E6D-979D-C18A3089B67E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA752226-DC1C-4E6D-979D-C18A3089B67E}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{BA752226-DC1C-4E6D-979D-C18A3089B67E}.Release|ARM64.Build.0 = Release|Any CPU
+		{BA752226-DC1C-4E6D-979D-C18A3089B67E}.Release|x64.ActiveCfg = Release|Any CPU
+		{BA752226-DC1C-4E6D-979D-C18A3089B67E}.Release|x64.Build.0 = Release|Any CPU
+		{BA752226-DC1C-4E6D-979D-C18A3089B67E}.Release|x86.ActiveCfg = Release|Any CPU
+		{BA752226-DC1C-4E6D-979D-C18A3089B67E}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
